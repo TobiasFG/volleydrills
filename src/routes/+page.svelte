@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Table } from 'svelte-ux';
+	import Player from '$lib/components/Player.svelte';
 </script>
 
 <h1 class="mb-4 mt-8 text-3xl font-bold">About</h1>
@@ -18,10 +18,10 @@
 <h1 class="mb-4 mt-8 text-xl font-bold">Terminology</h1>
 <p>The following terminology is used throughout the site:</p>
 
+<Player type="HC" />
+
 <div>
 	<h2>Positions</h2>
-
-	<Table />
 
 	<ul>
 		<li>
