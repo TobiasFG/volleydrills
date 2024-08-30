@@ -3,36 +3,50 @@
 	export let height: number = 24;
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" {width} {height} viewBox="0 0 64 64">
-	<radialGradient
-		id="7jnoslngIja1InKyh66Ura_118960_gr1"
-		cx="32"
-		cy="31.5"
-		r="31.259"
-		gradientUnits="userSpaceOnUse"
-		spreadMethod="reflect"
-		><stop offset="0" stop-color="#c5f1ff"></stop><stop offset=".35" stop-color="#cdf3ff"
-		></stop><stop offset=".907" stop-color="#e4faff"></stop><stop offset="1" stop-color="#e9fbff"
-		></stop></radialGradient
-	><path
-		fill="url(#7jnoslngIja1InKyh66Ura_118960_gr1)"
-		d="M58,54c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2h2.5c1.925,0,3.5-1.575,3.5-3.5 S62.425,43,60.5,43H50c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5h8c1.65,0,3-1.35,3-3c0-1.65-1.35-3-3-3H42v-6h18 c2.335,0,4.22-2.028,3.979-4.41C63.77,19.514,61.897,18,59.811,18H58c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2h0.357 c1.308,0,2.499-0.941,2.63-2.242C61.137,10.261,59.966,9,58.5,9h-14C43.672,9,43,8.328,43,7.5S43.672,6,44.5,6h3.857 c1.308,0,2.499-0.941,2.63-2.242C51.137,2.261,49.966,1,48.5,1L15.643,1c-1.308,0-2.499,0.941-2.63,2.242 C12.863,4.739,14.034,6,15.5,6H19c1.105,0,2,0.895,2,2c0,1.105-0.895,2-2,2H6.189c-2.086,0-3.958,1.514-4.168,3.59 C1.78,15.972,3.665,18,6,18h2.5c1.933,0,3.5,1.567,3.5,3.5c0,1.933-1.567,3.5-3.5,3.5H5.189c-2.086,0-3.958,1.514-4.168,3.59 C0.78,30.972,2.665,33,5,33h17v11H6c-1.65,0-3,1.35-3,3c0,1.65,1.35,3,3,3h0c1.105,0,2,0.895,2,2c0,1.105-0.895,2-2,2H4.189 c-2.086,0-3.958,1.514-4.168,3.59C-0.22,59.972,1.665,62,4,62h53.811c2.086,0,3.958-1.514,4.168-3.59C62.22,56.028,60.335,54,58,54z"
-	></path><linearGradient
-		id="7jnoslngIja1InKyh66Urb_118960_gr2"
-		x1="32"
-		x2="32"
-		y1="61.521"
-		y2="17.521"
-		gradientUnits="userSpaceOnUse"
-		spreadMethod="reflect"
-		><stop offset="0" stop-color="#155cde"></stop><stop offset=".278" stop-color="#1f7fe5"
-		></stop><stop offset=".569" stop-color="#279ceb"></stop><stop offset=".82" stop-color="#2cafef"
-		></stop><stop offset="1" stop-color="#2eb5f0"></stop></linearGradient
-	><path
-		fill="url(#7jnoslngIja1InKyh66Urb_118960_gr2)"
-		d="M50,12H14c-2.209,0-4,1.791-4,4v36c0,2.209,1.791,4,4,4h36c2.209,0,4-1.791,4-4V16 C54,13.791,52.209,12,50,12z"
-	></path><path
-		fill="#fff"
-		d="M44.4,35H41v15c0,0.552-0.448,1-1,1h-4c-0.552,0-1-0.448-1-1V35h-3c-0.552,0-1-0.448-1-1v-3 c0-0.552,0.448-1,1-1h3v-3.069C35.005,22.582,36.812,20,41.936,20H45c0.552,0,1,0.448,1,1v3c0,0.552-0.448,1-1,1h-1.874 C41.131,25,41,25.746,41,27.136V30h4c0.631,0,1.104,0.577,0.981,1.196l-0.6,3C45.287,34.664,44.876,35,44.4,35z"
-	></path>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" {width} {height} viewBox="0,0,300,150">
+	<defs
+		><linearGradient
+			x1="32"
+			y1="5.25"
+			x2="32"
+			y2="59.38"
+			gradientUnits="userSpaceOnUse"
+			id="color-1_123743_gr1"
+			><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"
+			></stop></linearGradient
+		><linearGradient
+			x1="31.015"
+			y1="14.405"
+			x2="31.015"
+			y2="49.732"
+			gradientUnits="userSpaceOnUse"
+			id="color-2_123743_gr2"
+			><stop offset="0" stop-color="#8ab4ff"></stop><stop offset="1" stop-color="#e492ff"
+			></stop></linearGradient
+		></defs
+	><g
+		fill="none"
+		fill-rule="nonzero"
+		stroke="none"
+		stroke-width="1"
+		stroke-linecap="butt"
+		stroke-linejoin="miter"
+		stroke-miterlimit="10"
+		stroke-dasharray=""
+		stroke-dashoffset="0"
+		font-family="none"
+		font-weight="none"
+		font-size="none"
+		text-anchor="none"
+		style="mix-blend-mode: normal"
+		><g transform="scale(4,4)"
+			><path
+				d="M32,58c-14.337,0 -26,-11.663 -26,-26c0,-14.337 11.663,-26 26,-26c14.337,0 26,11.663 26,26c0,14.337 -11.663,26 -26,26zM32,8c-13.233,0 -24,10.767 -24,24c0,13.233 10.767,24 24,24c13.233,0 24,-10.767 24,-24c0,-13.233 -10.767,-24 -24,-24z"
+				fill="url(#color-1_123743_gr1)"
+			></path><path
+				d="M34,49v-15h5.001l1.03,-6l-6.031,0.019v-4.089c0,-1.743 -0.109,-2.93 2.39,-2.93l3.61,-0.001l0.005,-5.731c-0.845,-0.074 -2.273,-0.238 -4.512,-0.238c-4.675,0 -7.493,2.817 -7.493,7.989v4.981h-6v6h6v15z"
+				fill="url(#color-2_123743_gr2)"
+			></path></g
+		></g
+	>
 </svg>

@@ -1,36 +1,38 @@
-const colors = require('tailwindcss/colors');
-const svelteUx = require('svelte-ux/plugins/tailwind.cjs');
+import { xl } from 'flowbite-svelte';
+import flowbitePlugin from 'flowbite/plugin';
 
-module.exports = {
-	content: ['./src/**/*.{html,svelte}', './node_modules/svelte-ux/**/*.{svelte,js}'],
+import type { Config } from 'tailwindcss';
 
-	// See customization docs: https://svelte-ux.techniq.dev/customization
-	ux: {
-		themes: {
-			light: {
-				primary: '#013b76',
-				'primary-content': 'white',
-				secondary: colors['blue']['500'],
-				'surface-100': 'white',
-				'surface-200': colors['gray']['100'],
-				'surface-300': colors['gray']['300'],
-				'surface-content': colors['gray']['900'],
-				'color-scheme': 'light'
-			},
-			dark: {
-				primary: colors['orange']['500'],
-				'primary-content': 'white',
-				secondary: colors['blue']['500'],
-				'surface-100': colors['zinc']['800'],
-				'surface-200': colors['zinc']['900'],
-				'surface-300': colors['zinc']['950'],
-				'surface-content': colors['zinc']['100'],
-				'color-scheme': 'dark'
+export default {
+	content: [
+		'./src/**/*.{html,js,svelte,ts}',
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
+	],
+	darkMode: 'selector',
+	theme: {
+		fontFamily: {
+			heading: ['Quicksand', 'system-ui'],
+			body: ['system-ui']
+		},
+		extend: {
+			colors: {
+				// flowbite-svelte
+				skovbakken: '#013B76',
+				primary: {
+					50: '#9ACCFE',
+					100: '#72B8FE',
+					200: '#49A3FD',
+					300: '#218FFD',
+					400: '#027AF2',
+					500: '#0266CA',
+					600: '#0252A2',
+					700: '#013B76',
+					800: '#012951',
+					900: '#001428'
+				}
 			}
 		}
 	},
 
-	plugins: [
-		svelteUx // uses hsl() color space by default. To use oklch(), use: svelteUx({ colorSpace: 'oklch' }),
-	]
-};
+	plugins: [flowbitePlugin]
+} as Config;

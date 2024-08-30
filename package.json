@@ -21,6 +21,7 @@
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.36.0",
+    "flowbite-svelte-icons": "^1.6.1",
     "globals": "^15.0.0",
     "prettier": "^3.1.1",
     "prettier-plugin-svelte": "^3.1.2",
@@ -37,6 +38,8 @@
     "@sveltejs/adapter-static": "^3.0.4",
     "@types/animejs": "^3.1.12",
     "animejs": "^3.2.2",
-    "svelte-ux": "^0.74.6"
+    "svelte-ux": "^0.74.6",
+    "flowbite": "^2.5.1",
+    "flowbite-svelte": "^0.46.15"
   }
 }
