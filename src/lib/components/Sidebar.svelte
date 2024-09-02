@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import SidebarNotification from './SidebarNotification.svelte';
 	import Credit from './Credit.svelte';
+	import { base } from '$app/paths';
 	$: activeUrl = $page.url.pathname;
 </script>
 
@@ -9,7 +10,7 @@
 	class=" flex h-full min-w-52 flex-col justify-between overflow-y-auto border-r border-gray-200 px-3 py-4 dark:border-gray-700"
 >
 	<div>
-		<a href="/">Home</a>
+		<a href="{base}/">Home</a>
 		<p>Roles</p>
 		<p>Setter</p>
 		<p>Attacker</p>
