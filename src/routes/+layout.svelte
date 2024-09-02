@@ -1,16 +1,15 @@
 <script lang="ts">
 	import '../app.css';
-	import FloatingCredit from '$lib/components/FloatingCredit.svelte';
 	import Sidebar from '$lib/components/Sidebar.svelte';
-	import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
-<Sidebar />
-
-<body class="p-1.5 antialiased">
-	<ThemeSwitcher />
-	<main>
-		<slot />
+<div class=" h-screen overflow-hidden antialiased">
+	<Navbar />
+	<main class="flex h-[calc(100%-4rem)] flex-row">
+		<Sidebar />
+		<div class="h-full overflow-y-scroll px-16 py-8">
+			<slot />
+		</div>
 	</main>
-	<FloatingCredit />
-</body>
+</div>

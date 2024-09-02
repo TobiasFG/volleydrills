@@ -14,7 +14,7 @@
 	h4,
 	h5,
 	h6 {
-		@apply font-heading text-primary-700 dark:text-primary-50;
+		@apply font-heading text-sky-400 dark:text-primary-100;
 	}
 
 	body {

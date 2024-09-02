@@ -4,9 +4,12 @@
 	import GitHub from '$lib/icons/GitHub.svelte';
 	import Instagram from '$lib/icons/Instagram.svelte';
 	import LinkedIn from '$lib/icons/LinkedIn.svelte';
+	import SnapChat from '$lib/icons/SnapChat.svelte';
 	import anime from 'animejs';
 	import { onMount } from 'svelte';
 	const SocialMediaIcons: HTMLAnchorElement[] = [];
+
+	export let IconSize = 30;
 
 	onMount(() => {
 		anime({
@@ -37,9 +40,9 @@
 	};
 </script>
 
-<div class="fixed bottom-5 right-5 text-right">
-	<p class="text-xs">Skovbakken Volleyball</p>
-	<p class="text-md">Tobias Fabrin Gade</p>
+<div class=" my-1.5 rounded px-2.5 py-2 shadow outline outline-1 outline-sky-400">
+	<p class="text-xs">Created by</p>
+	<p class="text-md mb-3">Tobias Fabrin Gade</p>
 	<div class="flex flex-row gap-1">
 		<a
 			bind:this={SocialMediaIcons[0]}
@@ -49,7 +52,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<LinkedIn width={32} height={32} />
+			<LinkedIn width={IconSize} height={IconSize} />
 		</a>
 
 		<a
@@ -60,7 +63,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<Instagram width={32} height={32} />
+			<Instagram width={IconSize} height={IconSize} />
 		</a>
 		<a
 			bind:this={SocialMediaIcons[2]}
@@ -70,7 +73,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<Facebook width={32} height={32} />
+			<Facebook width={IconSize} height={IconSize} />
 		</a>
 		<a
 			bind:this={SocialMediaIcons[3]}
@@ -80,7 +83,17 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<GitHub width={32} height={32} />
+			<GitHub width={IconSize} height={IconSize} />
+		</a>
+		<a
+			bind:this={SocialMediaIcons[4]}
+			on:mouseenter={() => handleMouseEnter(4)}
+			on:mouseleave={() => handleMouseLeave(4)}
+			href="https://snapchat.com/t/bZElaXvy"
+			target="_blank"
+			class="text-blue-500"
+		>
+			<SnapChat width={IconSize} height={IconSize} />
 		</a>
 	</div>
 </div>

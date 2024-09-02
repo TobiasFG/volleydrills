@@ -1,35 +1,31 @@
 <script>
 	import { page } from '$app/stores';
-	import {
-		Sidebar,
-		SidebarBrand,
-		SidebarGroup,
-		SidebarItem,
-		SidebarWrapper
-	} from 'flowbite-svelte';
-	import { HomeOutline } from 'flowbite-svelte-icons';
-	import logo from '$lib/images/logo.png';
-	let spanClass = 'flex-1 ms-3 whitespace-nowrap';
+	import SidebarNotification from './SidebarNotification.svelte';
+	import Credit from './Credit.svelte';
 	$: activeUrl = $page.url.pathname;
-
-	let site = {
-		name: 'Volleyball Drills',
-		href: '/',
-		img: logo
-	};
 </script>
 
-<Sidebar {activeUrl}>
-	<SidebarWrapper>
-		<SidebarGroup>
-			<SidebarBrand {site} />
-			<SidebarItem label="Home">
-				<svelte:fragment slot="icon">
-					<HomeOutline
-						class="h-6 w-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-					/>
-				</svelte:fragment>
-			</SidebarItem>
-		</SidebarGroup>
-	</SidebarWrapper>
-</Sidebar>
+<div
+	class=" flex h-full min-w-52 flex-col justify-between overflow-y-auto border-r border-gray-200 px-3 py-4 dark:border-gray-700"
+>
+	<div>
+		<a href="/">Home</a>
+		<p>Roles</p>
+		<p>Setter</p>
+		<p>Attacker</p>
+		<p>Middle</p>
+		<p>Opposite</p>
+		<p>Libero</p>
+		<p>Rotations 5:1</p>
+		<p>The court</p>
+		<p>Pepper</p>
+	</div>
+
+	<div class="flex flex-col">
+		<SidebarNotification></SidebarNotification>
+		<Credit />
+	</div>
+</div>
+
+<style>
+</style>
