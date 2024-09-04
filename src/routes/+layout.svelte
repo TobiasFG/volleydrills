@@ -8,7 +8,7 @@
 	<Navbar />
 	<main class="flex h-[calc(100%-4rem)] flex-row">
 		<Sidebar />
-		<div class="h-full overflow-y-scroll px-16 py-8">
+		<div class="h-full w-full overflow-y-scroll px-16 py-8">
 			<slot />
 		</div>
 	</main>

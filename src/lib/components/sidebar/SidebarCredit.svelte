@@ -1,15 +1,14 @@
 <script lang="ts">
-	import Facebook from '$lib/icons/Facebook.svelte';
-
-	import GitHub from '$lib/icons/GitHub.svelte';
-	import Instagram from '$lib/icons/Instagram.svelte';
-	import LinkedIn from '$lib/icons/LinkedIn.svelte';
-	import SnapChat from '$lib/icons/SnapChat.svelte';
+	import Facebook from '$lib/images/social-media-logos/Facebook.png?enhanced';
+	import GitHubBlack from '$lib/images/social-media-logos/GitHub Black.png?enhanced';
+	import GitHubWhite from '$lib/images/social-media-logos/GitHub White.png?enhanced';
+	import Instagram from '$lib/images/social-media-logos/Instagram.png?enhanced';
+	import LinkedIn from '$lib/images/social-media-logos/LinkedIn.png?enhanced';
+	import SnapChat from '$lib/images/social-media-logos/Snapchat.png?enhanced';
 	import anime from 'animejs';
 	import { onMount } from 'svelte';
-	const SocialMediaIcons: HTMLAnchorElement[] = [];
 
-	export let IconSize = 30;
+	const SocialMediaIcons: HTMLAnchorElement[] = [];
 
 	onMount(() => {
 		anime({
@@ -43,7 +42,7 @@
 <div class=" my-1.5 rounded px-2.5 py-2 shadow outline outline-1 outline-sky-400">
 	<p class="text-xs">Created by</p>
 	<p class="text-md mb-3">Tobias Fabrin Gade</p>
-	<div class="flex flex-row gap-1">
+	<div class="flex flex-row justify-between">
 		<a
 			bind:this={SocialMediaIcons[0]}
 			on:mouseenter={() => handleMouseEnter(0)}
@@ -52,7 +51,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<LinkedIn width={IconSize} height={IconSize} />
+			<enhanced:img class="h-6 w-6" src={LinkedIn} alt="Instagram link" />
 		</a>
 
 		<a
@@ -63,7 +62,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<Instagram width={IconSize} height={IconSize} />
+			<enhanced:img class="h-6 w-6" src={Instagram} alt="Instagram link" />
 		</a>
 		<a
 			bind:this={SocialMediaIcons[2]}
@@ -73,7 +72,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<Facebook width={IconSize} height={IconSize} />
+			<enhanced:img class="h-6 w-6" src={Facebook} alt="Facebook link" />
 		</a>
 		<a
 			bind:this={SocialMediaIcons[3]}
@@ -81,9 +80,9 @@
 			on:mouseleave={() => handleMouseLeave(3)}
 			href="https://github.com/TobiasFG/"
 			target="_blank"
-			class="text-blue-500"
+			class="rounded-full bg-white text-blue-500"
 		>
-			<GitHub width={IconSize} height={IconSize} />
+			<enhanced:img class="h-6 w-6" src={GitHubBlack} alt="GitHub link" />
 		</a>
 		<a
 			bind:this={SocialMediaIcons[4]}
@@ -93,7 +92,7 @@
 			target="_blank"
 			class="text-blue-500"
 		>
-			<SnapChat width={IconSize} height={IconSize} />
+			<enhanced:img class="h-6 w-6" src={SnapChat} alt="Snapchat link" />
 		</a>
 	</div>
 </div>
