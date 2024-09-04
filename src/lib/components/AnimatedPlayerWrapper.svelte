@@ -2,7 +2,7 @@
 </script>
 
 <div class="absolute">
-	<slot name="Player" />
+  <slot name="Player" />
 </div>
 
 <style>

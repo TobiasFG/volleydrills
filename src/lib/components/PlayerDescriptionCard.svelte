@@ -17,7 +17,7 @@
     hovered = false
   }}
   class="rounded-md border border-transparent p-4 transition-all duration-500 ease-in-out hover:scale-[1.02] hover:border-sky-400"
-  href="{base}/"
+  href={base}
 >
   <p class="mb-2 text-lg font-medium">{PlayerMapping[type]}</p>
 

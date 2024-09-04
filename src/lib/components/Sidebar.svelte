@@ -13,39 +13,39 @@
 >
   <div class="flex w-full flex-col gap-1">
     <SidebarItem
-      href="{base}/"
+      href={base}
       text="Home"
     />
     <SidebarItemDropdown text="Roles">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href="{base}/roles/setter"
+          href={base}
           text="Setter"
         />
         <SidebarItem
-          href="{base}/roles/attacker"
+          href={base}
           text="Attacker"
         />
         <SidebarItem
-          href="{base}/roles/middle"
+          href={base}
           text="Middle"
         />
         <SidebarItem
-          href="{base}/roles/opposite"
+          href={base}
           text="Opposite"
         />
         <SidebarItem
-          href="{base}/roles/libero"
+          href={base}
           text="Libero"
         />
         <SidebarItem
-          href="{base}/roles/coach"
+          href={base}
           text="Coach"
         />
       </svelte:fragment>
     </SidebarItemDropdown>
     <SidebarItem
-      href="{base}/"
+      href={base}
       text="5:1 Rotations"
     />
     <SidebarItem
@@ -55,7 +55,7 @@
     <SidebarItemDropdown text="Pepper">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href="{base}/"
+          href={base}
           text="Traditional"
         >
           <svelte:fragment slot="tags">
@@ -64,7 +64,7 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href="{base}/"
+          href={base}
           text="Running"
         >
           <svelte:fragment slot="tags">
@@ -76,7 +76,7 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href="{base}/"
+          href={base}
           text="Focused"
         >
           <svelte:fragment slot="tags">

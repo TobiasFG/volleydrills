@@ -1,7 +1,7 @@
 import anime from 'animejs'
 import { CourtIdsLookup } from './CourtIds'
 
-let defaultShown = [
+const defaultShown = [
   CourtIdsLookup.Court_BackZone_1,
   CourtIdsLookup.Court_BackZone_2,
   CourtIdsLookup.Court_FrontZone_1,
@@ -29,7 +29,7 @@ export const RemoveHighlightFromDefaults = (
   ignore?: (typeof CourtIdsLookup)[keyof typeof CourtIdsLookup][]
 ) => {
   anime({
-    targets: defaultShown.filter((value, index) => !ignore?.includes(value)),
+    targets: defaultShown.filter((value) => !ignore?.includes(value)),
     opacity: 0.2,
     duration: 300,
     easing: 'easeInOutQuad',
@@ -48,7 +48,7 @@ export const AddHighlightToDefaults = (
   ignore?: (typeof CourtIdsLookup)[keyof typeof CourtIdsLookup][]
 ) => {
   anime({
-    targets: defaultShown.filter((value, index) => !ignore?.includes(value)),
+    targets: defaultShown.filter((value) => !ignore?.includes(value)),
     opacity: 1,
     duration: 300,
     easing: 'easeInOutQuad',
