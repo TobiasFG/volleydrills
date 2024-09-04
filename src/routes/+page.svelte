@@ -1,7 +1,10 @@
 <script lang="ts">
 	import Player from '$lib/components/Player.svelte';
 	import PlayerDescriptionCard from '$lib/components/PlayerDescriptionCard.svelte';
-	import { Button, Gallery } from 'flowbite-svelte';
+	import TagEquipment from '$lib/components/TagEquipment.svelte';
+	import TagSize from '$lib/components/TagSize.svelte';
+	import TagSkill from '$lib/components/TagSkill.svelte';
+	import { Gallery } from 'flowbite-svelte';
 
 	const yearOfBirth = 1998;
 	const myAge = new Date().getFullYear() - yearOfBirth;
@@ -10,16 +13,16 @@
 
 <div class=" mb-24 grid grid-cols-1 gap-12 lg:grid-cols-2">
 	<div>
-		<h1 class="mb-4 text-3xl font-bold">About</h1>
+		<h1>About</h1>
 
-		<p class=" mb-2">
+		<p class="mb-6">
 			Volleyball Drills is your one-stop hub for all things volleyball. I’ve gathered a wide range
 			of drills in one easy-to-access place, perfect for coaches, players, and enthusiasts. Whether
 			you’re planning your next practice or just looking to sharpen your skills, you’ll hopefully
 			find detailed explanations and animations to help you along the way.
 		</p>
 
-		<p class="mb-2">
+		<p class="mb-6">
 			My main focus is on the 5-1 volleyball formation and rotation system, but stay tuned — other
 			systems might make an appearance in the future.
 		</p>
@@ -29,7 +32,7 @@
 			feedback or improvements.
 		</p>
 
-		<h1 class="mb-4 text-3xl font-bold">Disclaimer</h1>
+		<h1>Disclaimer</h1>
 		<p>
 			This website is my volleyball playground — a hobby project where I share my personal take on
 			practicing and coaching the game. Expect a few creative spins, possibly a rogue term or two,
@@ -37,7 +40,7 @@
 		</p>
 	</div>
 	<div>
-		<h1 class="mb-4 text-3xl font-bold">About Me</h1>
+		<h1>About Me</h1>
 
 		<p class="mb-6">
 			Volleyball has been my game since I was 7. Fast forward to now, at {myAge} years old, and that's
@@ -45,7 +48,7 @@
 			amazing years on the court. Over the years, I've thrown myself into many aspects of the sport.
 		</p>
 
-		<h3 class="mb-1 text-sm font-bold">Playing Experience</h3>
+		<h3>Playing Experience</h3>
 		<p class="mb-6">
 			I’ve played different levels in Volleyball Danmark, starting on the kids level and moving
 			through U15, U17, U20, Jyllandsserien, and both the 2nd and 1st divisions. My main gig?
@@ -53,7 +56,7 @@
 			a libero and outside hitter in the youth leagues for some extra fun.
 		</p>
 
-		<h3 class="mb-1 text-sm font-bold">Coaching Experience</h3>
+		<h3>Coaching Experience</h3>
 		<p>
 			My coaching journey kicked off in 2012 with U15s. Since then, I’ve been the head coach for the
 			Jyllandsserie team for about 4 years, and in 2023, I took the leap to coach the 1st division
@@ -62,7 +65,7 @@
 	</div>
 </div>
 
-<h1 class="mb-4 text-3xl font-bold">Terminology</h1>
+<h1>Terminology</h1>
 
 <div class=" mb-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
 	<p>
@@ -71,15 +74,50 @@
 		but trust me — knowing this stuff will make everything else way easier (and more fun) to master.
 		So, let’s get on the same page and jump into my rouge volleyball vocab!
 	</p>
-	<div class="flex flex-row flex-wrap">
-		<p>If you’re not familiar with the following things consider giving them a look as well</p>
-		<div class="">
-			<Button color="dark">The court</Button>
+</div>
+
+<div class=" mb-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
+	<div>
+		<h2>Tags</h2>
+		<p class="mb-4">
+			The pages use tags to simplify navigation and provide a clear overview. There are three types
+			of tags, each highlighting key details: skill level, team size, and the equipment needed to
+			run the drill effectively.
+		</p>
+		<div class="mb-4 flex flex-row items-center justify-evenly">
+			<div class="flex flex-col items-center">
+				<p class="mb-1 text-sm">Skill tags</p>
+				<div class="flex flex-row gap-2">
+					<TagSkill difficulty="easy" size="large" />
+					<TagSkill difficulty="medium" size="large" />
+					<TagSkill difficulty="hard" size="large" />
+				</div>
+			</div>
+			<div class="flex flex-col items-center">
+				<p class="mb-1 text-sm">Team size tags</p>
+				<div class="flex flex-row gap-2">
+					<TagSize min={4} size="large" />
+					<TagSize min={8} canVary size="large" />
+					<TagSize min={12} max={14} size="large" />
+				</div>
+			</div>
+			<div class="flex flex-col items-center">
+				<p class="mb-1 text-sm">Equipment tag</p>
+				<div class="flex flex-row gap-2">
+					<TagEquipment size="large" />
+					<TagEquipment name="Precision net" size="large" />
+				</div>
+			</div>
 		</div>
+		<p class="mb-4">
+			The team size tag indicates the number of players needed to run the drill. Many drills can be
+			performed simultaneously by multiple groups. For example, a drill requiring 3 players could
+			involve 12 people split into 4 groups of 3.
+		</p>
 	</div>
 </div>
 
-<h2 class="mb-4 text-xl font-bold">Positions</h2>
+<h2>Positions</h2>
 
 <Gallery class=" grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 xl:grid-cols-3">
 	<PlayerDescriptionCard type="S">

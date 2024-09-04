@@ -15,6 +15,9 @@ export default {
 			body: ['system-ui']
 		},
 		extend: {
+      aspectRatio: {
+        '2/1': '2 / 1',
+      },
 			colors: {
 				// flowbite-svelte
 				skovbakken: '#013B76',

@@ -2,6 +2,8 @@
 	import { PlayerMapping } from '$lib/mappings/PlayerMappings';
 	import Player from './Player.svelte';
 	import PlayerEtc from './PlayerEtc.svelte';
+	import { base } from '$app/paths';
+
 	export let type: keyof typeof PlayerMapping;
 
 	let hovered = false;
@@ -15,7 +17,7 @@
 		hovered = false;
 	}}
 	class="rounded-md border border-transparent p-4 transition-all duration-500 ease-in-out hover:scale-[1.02] hover:border-sky-400"
-	href="/"
+	href="{base}/"
 >
 	<p class="mb-2 text-lg font-medium">{PlayerMapping[type]}</p>
 
