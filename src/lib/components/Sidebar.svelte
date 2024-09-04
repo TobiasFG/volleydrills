@@ -5,6 +5,7 @@
   import SidebarItemDropdown from './sidebar/SidebarItemDropdown.svelte'
   import TagSkill from './TagSkill.svelte'
   import TagSize from './TagSize.svelte'
+  import { base } from '$app/paths'
 </script>
 
 <div
@@ -12,49 +13,49 @@
 >
   <div class="flex w-full flex-col gap-1">
     <SidebarItem
-      href="/"
+      href="{base}/"
       text="Home"
     />
     <SidebarItemDropdown text="Roles">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href="/roles/setter"
+          href="{base}/roles/setter"
           text="Setter"
         />
         <SidebarItem
-          href="/roles/attacker"
+          href="{base}/roles/attacker"
           text="Attacker"
         />
         <SidebarItem
-          href="/roles/middle"
+          href="{base}/roles/middle"
           text="Middle"
         />
         <SidebarItem
-          href="/roles/opposite"
+          href="{base}/roles/opposite"
           text="Opposite"
         />
         <SidebarItem
-          href="/roles/libero"
+          href="{base}/roles/libero"
           text="Libero"
         />
         <SidebarItem
-          href="/roles/coach"
+          href="{base}/roles/coach"
           text="Coach"
         />
       </svelte:fragment>
     </SidebarItemDropdown>
     <SidebarItem
-      href="/"
+      href="{base}/"
       text="5:1 Rotations"
     />
     <SidebarItem
-      href="/court"
+      href="{base}/court"
       text="The court"
     />
     <SidebarItemDropdown text="Pepper">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href="/"
+          href="{base}/"
           text="Traditional"
         >
           <svelte:fragment slot="tags">
@@ -63,7 +64,7 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href="/"
+          href="{base}/"
           text="Running"
         >
           <svelte:fragment slot="tags">
@@ -75,7 +76,7 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href="/"
+          href="{base}/"
           text="Focused"
         >
           <svelte:fragment slot="tags">

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths'
   import { Button } from 'flowbite-svelte'
 </script>
 
@@ -11,7 +12,7 @@
     incomplete content for the time being.
   </p>
   <Button
-    href="/changelog"
+    href="{base}/changelog"
     class="inline-block rounded px-1.5 py-0.5">Changelog</Button
   >
 </div>
