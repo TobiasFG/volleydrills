@@ -45,6 +45,8 @@
     "flowbite-svelte": "^0.46.15"
   },
   "trustedDependencies": [
+    "@sveltejs/kit",
+    "esbuild",
     "svelte-preprocess"
   ]
 }
