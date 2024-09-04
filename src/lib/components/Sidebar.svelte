@@ -44,7 +44,7 @@
       </svelte:fragment>
     </SidebarItemDropdown>
     <SidebarItem
-      href="/rotations"
+      href="/"
       text="5:1 Rotations"
     />
     <SidebarItem
@@ -54,7 +54,7 @@
     <SidebarItemDropdown text="Pepper">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href="/pepper/traditional"
+          href="/"
           text="Traditional"
         >
           <svelte:fragment slot="tags">
@@ -63,7 +63,7 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href="/pepper/running"
+          href="/"
           text="Running"
         >
           <svelte:fragment slot="tags">
@@ -75,7 +75,7 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href="/pepper/focused"
+          href="/"
           text="Focused"
         >
           <svelte:fragment slot="tags">

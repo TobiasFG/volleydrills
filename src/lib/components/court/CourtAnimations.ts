@@ -68,7 +68,7 @@ export const AddStrokeHighlight = (
 ) => {
   anime({
     targets: elements,
-    strokeWidth: 10,
+    strokeWidth: 5,
     duration: 300,
     easing: 'easeInOutQuad',
   })

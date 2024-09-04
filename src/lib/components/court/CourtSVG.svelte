@@ -32,22 +32,22 @@
     <rect id="Court_BackZone_2" x="1800" y="300" width="600" height="900" fill="#FF9900"/>
     <rect id="Court_FrontZone_1" x="1200" y="300" width="300" height="900" fill="#FF9900"/>
     <rect id="Court_BackZone_1" x="600" y="300" width="600" height="900" fill="#FF9900"/>
-    <text id="Court_Text" opacity=0 fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="96" font-weight="bold" letter-spacing="0em"><tspan x="1150" y="784.909">Playing   Court</tspan></text>
+    <text id="Court_Text" opacity=0 fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="96" font-weight="bold" letter-spacing="0em"><tspan x="1275" y="784.909">Play   Zone</tspan></text>
     <g id="Court_BackZone_Text_2" opacity=0>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="2018.23" y="774.273">Back Zone</tspan></text>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="2065.1" y="735.273">Team 2</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="2018.23" y="774.273">Back Zone</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="2065.1" y="735.273">Team 2</tspan></text>
     </g>
     <g id="Court_BackZone_Text_1" opacity=0>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="818.234" y="774.273">Back Zone</tspan></text>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="866.506" y="735.273">Team 1</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="818.234" y="774.273">Back Zone</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="866.506" y="735.273">Team 1</tspan></text>
     </g>
     <g id="Court_FrontZone_Text_2" opacity=0>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="1565.45" y="774.273">Front Zone</tspan></text>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="1615.1" y="735.273">Team 2</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="1565.45" y="774.273">Front Zone</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="1615.1" y="735.273">Team 2</tspan></text>
     </g>
     <g id="Court_FrontZone_Text_1" opacity=0>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="1265.45" y="774.273">Front Zone</tspan></text>
-      <text class="fill-white dark:fill-black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="1316.51" y="735.273">Team 1</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em"><tspan x="1265.45" y="774.273">Front Zone</tspan></text>
+      <text class="fill-white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="bold" letter-spacing="0em"><tspan x="1316.51" y="735.273">Team 1</tspan></text>
     </g>
   <g id="Court_Details" opacity=0>
     <path id="Court_Width_Line" d="M700 300L685.566 325L714.434 325L700 300ZM700 1200L714.434 1175L685.566 1175L700 1200ZM697.5 322.5L697.5 1177.5L702.5 1177.5L702.5 322.5L697.5 322.5Z" fill="white"/>
