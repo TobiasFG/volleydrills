@@ -5,8 +5,38 @@
 
 <Timeline>
   <TimelineItem
+    title="Pepper! — Beta 0.4"
+    date={DateTime.fromISO('2024-09-05').toLocaleString(DateTime.DATE_HUGE)}
+  >
+    <h3 class="mb-0">Highlight</h3>
+    <p class="mb-6 text-sm">
+      First drill animation is here! I'm excited to introduce everyone's
+      favorite volleyball warm-up: Pepper! This update also includes several
+      minor adjustments.
+    </p>
+
+    <h3 class="mb-0">New</h3>
+    <List
+      list="disc"
+      class="pb-6 text-sm"
+    >
+      <Li>Added a generic player (P) icon for non-specific role animations.</Li>
+      <Li
+        >Introduced a ball icon, inspired by Mikasa's 2024 match ball design.</Li
+      >
+    </List>
+    <h3 class="mb-0">Corrections & Adjustments</h3>
+    <List
+      list="disc"
+      class="pb-6 text-sm"
+    >
+      <Li>Fixed a link bug that prevented navigation between pages.</Li>
+      <Li>Updated the visual appearance of the sidebar notification.</Li>
+    </List>
+  </TimelineItem>
+  <TimelineItem
     title="Interactive Court — Beta 0.3"
-    date={DateTime.fromISO('2024-09-02').toLocaleString(DateTime.DATE_HUGE)}
+    date={DateTime.fromISO('2024-09-04').toLocaleString(DateTime.DATE_HUGE)}
   >
     <h3 class="mb-0">Highlight</h3>
     <p class="mb-6 text-sm">

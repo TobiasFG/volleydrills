@@ -1,9 +1,10 @@
 <script lang="ts">
   import Player from '$lib/components/Player.svelte'
   import PlayerDescriptionCard from '$lib/components/PlayerDescriptionCard.svelte'
-  import TagEquipment from '$lib/components/TagEquipment.svelte'
-  import TagSize from '$lib/components/TagSize.svelte'
-  import TagSkill from '$lib/components/TagSkill.svelte'
+  import TagEquipment from '$lib/components/tags/TagEquipment.svelte'
+  import TagSize from '$lib/components/tags/TagSize.svelte'
+  import TagSkill from '$lib/components/tags/TagSkill.svelte'
+  import Volleyball from '$lib/components/Volleyball.svelte'
   import { Gallery } from 'flowbite-svelte'
 
   const yearOfBirth = 1998
@@ -88,8 +89,9 @@
     <h2>Tags</h2>
     <p class="mb-4">
       The pages use tags to simplify navigation and provide a clear overview.
-      There are three types of tags, each highlighting key details: skill level,
-      team size, and the equipment needed to run the drill effectively.
+      There are three types of tags, each highlighting key details: skill /
+      difficulty level, team size, and the equipment needed to run the drill
+      effectively.
     </p>
     <div class="mb-4 flex flex-row items-center justify-evenly">
       <div class="flex flex-col items-center">
@@ -118,7 +120,6 @@
           />
           <TagSize
             min={8}
-            canVary
             size="large"
           />
           <TagSize
@@ -146,6 +147,32 @@
       groups of 3.
     </p>
   </div>
+  <div>
+    <h2>Icons</h2>
+    <p class="mb-4">
+      For animations on the website, I’ll be using the following player and ball
+      icons.
+    </p>
+
+    <div class="mb-4 flex flex-row items-center justify-evenly">
+      <div class="flex flex-col items-center">
+        <p class="mb-1 text-sm">Player</p>
+        <div class="flex flex-row gap-2">
+          <Player
+            type="P"
+            size={60}
+          />
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <p class="mb-1 text-sm">Ball</p>
+        <div class="flex flex-row gap-2">
+          <Volleyball size={20} />
+        </div>
+      </div>
+    </div>
+    <p class="mb-4 text-sm">See below for player icon types & variations</p>
+  </div>
 </div>
 
 <h2>Positions</h2>
@@ -168,8 +195,14 @@
       in the play-calling!
     </svelte:fragment>
     <svelte:fragment slot="role variants">
-      <Player type="AC" />
-      <Player type="AF" />
+      <Player
+        type="AC"
+        size={60}
+      />
+      <Player
+        type="AF"
+        size={60}
+      />
     </svelte:fragment>
   </PlayerDescriptionCard>
 
@@ -181,8 +214,14 @@
       libero, but let’s face it, their job is tough enough already!
     </svelte:fragment>
     <svelte:fragment slot="role variants">
-      <Player type="MC" />
-      <Player type="MF" />
+      <Player
+        type="MC"
+        size={60}
+      />
+      <Player
+        type="MF"
+        size={60}
+      />
     </svelte:fragment>
   </PlayerDescriptionCard>
 

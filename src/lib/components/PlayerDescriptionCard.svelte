@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { base } from '$app/paths'
   import { PlayerMapping } from '$lib/mappings/PlayerMappings'
+  import { LinkHandler } from '$lib/utility/LinkHandler'
   import Player from './Player.svelte'
-  import PlayerEtc from './PlayerEtc.svelte'
 
   export let type: keyof typeof PlayerMapping
 
@@ -17,7 +16,7 @@
     hovered = false
   }}
   class="rounded-md border border-transparent p-4 transition-all duration-500 ease-in-out hover:scale-[1.02] hover:border-sky-400"
-  href={base}
+  href={LinkHandler('/')}
 >
   <p class="mb-2 text-lg font-medium">{PlayerMapping[type]}</p>
 
@@ -27,7 +26,10 @@
 
   <div class="mb-6 border-sky-400 pl-4">
     <p class="mb-2 text-sm">Icon</p>
-    <Player {type} />
+    <Player
+      {type}
+      size={60}
+    />
   </div>
 
   <div class="mb-6 border-sky-400 pl-4">
@@ -37,12 +39,17 @@
         <Player
           {type}
           team={1}
+          size={60}
         />
         <Player
           {type}
           team={2}
+          size={60}
         />
-        <PlayerEtc />
+        <Player
+          type="..."
+          size={60}
+        />
       </div>
     {/if}
   </div>

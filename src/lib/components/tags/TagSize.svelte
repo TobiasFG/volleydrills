@@ -1,8 +1,9 @@
 <script lang="ts">
+  import { Tooltip } from 'flowbite-svelte'
+
   export let size: 'small' | 'large' = 'small'
   export let min: number
   export let max: number | null = null
-  export let canVary: boolean = false
 </script>
 
 <div
@@ -13,9 +14,16 @@
 >
   <p class="">
     {#if max === null}
-      {canVary ? '~' : ''}{min}
+      {min}
     {:else}
-      {canVary ? '~' : ''}{min}-{max}
+      {min}-{max}
     {/if}
   </p>
 </div>
+<Tooltip class="max-w-52">
+  {#if max === null}
+    Requires {min} players.
+  {:else}
+    Requires {min}-{max} players.
+  {/if}
+</Tooltip>

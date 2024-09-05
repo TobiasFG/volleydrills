@@ -3,9 +3,9 @@
   import SidebarCredit from './sidebar/SidebarCredit.svelte'
   import SidebarItem from './sidebar/SidebarItem.svelte'
   import SidebarItemDropdown from './sidebar/SidebarItemDropdown.svelte'
-  import TagSkill from './TagSkill.svelte'
-  import TagSize from './TagSize.svelte'
-  import { base } from '$app/paths'
+  import { LinkHandler } from '$lib/utility/LinkHandler'
+  import TagSkill from './tags/TagSkill.svelte'
+  import TagSize from './tags/TagSize.svelte'
 </script>
 
 <div
@@ -13,49 +13,49 @@
 >
   <div class="flex w-full flex-col gap-1">
     <SidebarItem
-      href={base}
+      link={LinkHandler('/')}
       text="Home"
     />
     <SidebarItemDropdown text="Roles">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Setter"
         />
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Attacker"
         />
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Middle"
         />
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Opposite"
         />
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Libero"
         />
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Coach"
         />
       </svelte:fragment>
     </SidebarItemDropdown>
     <SidebarItem
-      href={base}
+      link={LinkHandler('/')}
       text="5:1 Rotations"
     />
     <SidebarItem
-      href="{base}/court"
+      link={LinkHandler('/court')}
       text="The court"
     />
     <SidebarItemDropdown text="Pepper">
       <svelte:fragment slot="DropdownSidebarItems">
         <SidebarItem
-          href={base}
+          link={LinkHandler('/pepper/traditional')}
           text="Traditional"
         >
           <svelte:fragment slot="tags">
@@ -64,19 +64,19 @@
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Running"
         >
           <svelte:fragment slot="tags">
             <TagSkill difficulty="medium" />
             <TagSize
               min={3}
-              canVary
+              max={5}
             />
           </svelte:fragment>
         </SidebarItem>
         <SidebarItem
-          href={base}
+          link={LinkHandler('/')}
           text="Focused"
         >
           <svelte:fragment slot="tags">

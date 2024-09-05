@@ -1,14 +1,14 @@
 <script>
-  import { base } from '$app/paths'
   import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte'
   import logo from '$lib/images/logo.png'
+  import { LinkHandler } from '$lib/utility/LinkHandler'
 </script>
 
 <div
   class="mx-auto flex h-16 w-full flex-wrap items-center justify-between divide-gray-100 border-b border-gray-200 px-2 py-2.5 sm:px-4 dark:divide-gray-700 dark:border-gray-700"
 >
   <a
-    href={base}
+    href={LinkHandler('/')}
     class="flex flex-row justify-start"
   >
     <img

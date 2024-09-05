@@ -21,7 +21,7 @@
 
 {#if open}
   <div
-    class="*:*:ml-2"
+    class="flex flex-col gap-1 *:ml-2"
     transition:slide={{ duration: 300, easing: quintOut, axis: 'y' }}
   >
     <slot name="DropdownSidebarItems"></slot>

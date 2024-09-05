@@ -44,7 +44,10 @@
     "animejs": "^3.2.2",
     "flowbite": "^2.5.1",
     "flowbite-svelte": "^0.46.16",
-    "luxon": "^3.5.0"
+    "luxon": "^3.5.0",
+    "@theatre/core": "^0.7.2",
+    "@theatre/r3f": "^0.7.2",
+    "@theatre/studio": "^0.7.2"
   },
   "trustedDependencies": [
     "@sveltejs/kit",

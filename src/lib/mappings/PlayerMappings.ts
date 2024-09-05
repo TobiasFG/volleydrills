@@ -1,4 +1,6 @@
 export const PlayerMapping = {
+  '...': 'Etc.',
+  P: 'Player',
   S: 'Setter',
   A: 'Attacker',
   AC: 'Attacker close',

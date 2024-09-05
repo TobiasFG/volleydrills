@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { Tooltip } from 'flowbite-svelte'
+
   export let size: 'small' | 'large' = 'small'
   export let name: string | null = null
 </script>
@@ -13,3 +15,10 @@
     <p>{name}</p>
   {/if}
 </div>
+<Tooltip class="max-w-52">
+  {#if name === null}
+    Equipment needed.
+  {:else}
+    {name} needed.
+  {/if}
+</Tooltip>
