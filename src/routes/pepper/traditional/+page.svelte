@@ -3,6 +3,7 @@
   import Volleyball from '$lib/components/Volleyball.svelte'
   import anime from 'animejs'
   import { Button, Range } from 'flowbite-svelte'
+  import { AngleDownOutline } from 'flowbite-svelte-icons'
   import { onMount } from 'svelte'
 
   const UpEasingY = 'easeOutQuad'
@@ -19,9 +20,9 @@
   const Player2BallSetPoint = { x: 1650, y: 1000, size: 400, opacity: 1 }
   const Player1BallHitPoint = { x: 250, y: 900, size: 120, opacity: 1 }
   const Player2BallHitPoint = { x: 2600, y: 900, size: 120, opacity: 1 }
-  const Player1BallDigPoint = { x: 350, y: 1200, size: 120, opacity: 1 }
-  const Player2BallDigPoint = { x: 2550, y: 1200, size: 120, opacity: 1 }
-  const BallTopPoint = 200
+  const Player1BallDigPoint = { x: 350, y: 1100, size: 120, opacity: 1 }
+  const Player2BallDigPoint = { x: 2550, y: 1100, size: 120, opacity: 1 }
+  const BallTopPoint = 400
 
   let HitSpeed
   let DigSpeed
@@ -248,12 +249,20 @@
   })
 </script>
 
-<div class="container relative my-12 aspect-2/1">
+<h3>Traditional</h3>
+<h1>Pepper</h1>
+
+<p class=" max-w-xl">
+  Pepper is the goat in volleyball — a fast-paced volleyball warm-up where two
+  players pass, set, and spike the ball back and forth, building quick reactions
+  and ball control. Perfect for sharpening your skills before a game!
+</p>
+
+<div class="container relative mx-auto my-12 aspect-2/1 max-w-4xl">
   <svg
-    width="100%"
-    height="100%"
+    class="h-full w-full"
     viewBox="0 0 3000 1500"
-    fill="transparent"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <Volleyball
@@ -274,40 +283,44 @@
   </svg>
 </div>
 
-<div class="container mb-4">
-  <Range
-    id="TimelineRangeElement"
-    step="0.001"
-    bind:value={TimelineRangeValue}
-    min={0}
-    max={100}
-  />
+<div class="container">
+  <div class="mb-4">
+    <Range
+      id="TimelineRangeElement"
+      step="0.001"
+      bind:value={TimelineRangeValue}
+      min={0}
+      max={100}
+    />
+  </div>
+  <div class="flex flex-row justify-center gap-5">
+    <Button
+      on:click={() => {
+        if (TimeLine) {
+          TimeLine.play()
+        }
+      }}>Play</Button
+    >
+    <Button
+      on:click={() => {
+        if (TimeLine) {
+          TimeLine.pause()
+        }
+      }}>Pause</Button
+    >
+    <Button
+      on:click={() => {
+        if (TimeLine) {
+          TimeLine.restart()
+          TimeLine.pause()
+        }
+      }}>Reset</Button
+    >
+  </div>
 </div>
 
-<div class="flex flex-row justify-center gap-5">
-  <Button
-    on:click={() => {
-      if (TimeLine) {
-        TimeLine.play()
-      }
-    }}>Play</Button
-  >
-  <Button
-    on:click={() => {
-      if (TimeLine) {
-        TimeLine.pause()
-      }
-    }}>Pause</Button
-  >
-  <Button
-    on:click={() => {
-      if (TimeLine) {
-        TimeLine.restart()
-        TimelineRangeValue = 0
-        TimeLine.pause()
-      }
-    }}>Reset</Button
-  >
+<div class="text-sky-400">
+  <AngleDownOutline size="xl" />
 </div>
 
 <style>
